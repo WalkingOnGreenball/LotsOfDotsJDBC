@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/resources/css/reset.css">
+        <link rel="stylesheet" href="/resources/css/sub.css">
+        <link rel="stylesheet" href="/resources/css/header.css">
+        <link rel="stylesheet" href="/resources/css/footer.css">
+        <link rel="stylesheet" href="/resources/css/project/project.css">
+        <title>lots of dots</title>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <a href=""><img src="/resources/images/Icons/corner_right_up_icon.png" alt="clickUp" class="clickUp"></a>
+            </div>
+
+            <!-- header -->
+            <header>
+                <div class="header_logo">
+                    <a href="/index.html"><img src="/resources/images/Logos/logo_row.png" alt="logo_row" class="header_leftLogo"></a>
+                </div>
+                <nav class="header_nav">
+                    <ul>
+                        <li>
+                            <a href="/category/about/about.html"><img src="/resources/images/Icons/circle_icon.png" alt="About" class="icons"></a>
+                        </li>
+                        <li>
+                            <a href="/category/project/project.html"><img src="/resources/images/Icons/loader_loading_icon.png" alt="Project" class="icons"></a>
+                        </li>
+                        <li id="dotsLogo">
+                            <a href="/category/dots/dots.html"><img src="/resources/images/Icons/circle_icon.png" alt="Dots" class="icons"></a>
+                        </li>
+                        <li>
+                            <a href="/category/archive/archive.html"><img src="/resources/images/Icons/circle_icon.png" alt="Archive" class="icons"></a>
+                        </li>
+                        <li id="blogLogo">
+                            <a href="/category/blog/blog.html"><img src="/resources/images/Icons/circle_icon.png" alt="Blog" class="icons"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_rightNav">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="/resources/images/Icons/search_icon.png" alt="search" class="icons"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/resources/images/Icons/shopping_bag_icon.png" alt="bag" class="icons" id="shopping_bag_icon"></a>
+                            <div class="shopping_bag" id="shopping_bag">
+                                <div class="shopping_bag_top">
+                                    <div class="shopping_bag_title">
+                                        Shopping bag
+                                    </div>
+                                    <div class="shopping_bag_exit">
+                                        <img src="/resources/images/Icons/x_icon.png" alt="" id="shopping_bag_exit_icon">
+                                    </div>
+                                </div>
+                                <div class="shopping_bag_bot">
+                                    <div class="shopping_bag_photo">
+                                        <img src="/resources/images/Anothor spring/1.webp" alt="">
+                                    </div>
+                                    <div class="shopping_bag_info">
+                                        · 에세이 <또 다른 봄> + 인터뷰집 <br>
+                                        · 기록 노트 <br>
+                                        · 키링 <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/member/login.jsp"><img src="/resources/images/Icons/user_icon.png" alt="login" class="icons"></a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- main -->
+            <main class="project_Main">
+                <section class="project_left">
+                    <a href="/category/project/project-detail.html" id="change_title1">∙ Project1 <span class="smallA">또 다른 봄 -</span></a>
+                    <br>
+                    <a href="" id="change_title2">∙ Project2 <span class="smallA">우울집 -</span>
+                    </a>
+                </section>
+                <section class="project_right">
+                    <div class="project_pic">
+                        <img src="/resources/images/Pictures/000007.JPG" alt="" id="imgTag1">
+                    </div>
+                </section>
+            </main>
+
+            <!-- footer -->
+            <footer class="index_footer">
+                <div class="index_footerRow">
+                    <div class="index_footerTop">
+                        <a href="#" class="footerAccent">Contact us</a>
+                    </div>
+                    <div class="index_footerMid">
+                        <a href="/category/notice/notice.html">Notice</a>
+                            · Store phone number (13:00~20:00) :
+                        <a href="#">010-5036-9187</a>
+                    </div>
+                    <div class="index_footerBot"></div>
+                </div>
+                <div class="index_footerRow">
+                    <div class="index_footerTopRight">
+                        <a href="#">
+                            <img src="/resources/images/Icons/message_square_icon.png" alt="message">
+                        </a>
+                        <a href="#">
+                            <img src="/resources/images/Icons/mail_icon.png" alt="mail">
+                        </a>
+                        <a href="#">
+                            <img src="/resources/images/Icons/instagram_icon.png" alt="insta">
+                        </a>
+                    </div>
+                    <div class="index_footerMid"></div>
+                    <div class="index_footerBot"></div>
+                </div>
+            </footer>
+        </div>
+        <script>
+            let imgTag1 = document.querySelector("#imgTag1");
+            let imgTag2 = document.querySelector("#imgTag2");
+            let title1 = document.querySelector("#change_title1");
+            window.onload = function() {
+                title1.addEventListener("mouseover", function() {
+                    imgTag1.src = "/resources/images/Anothor spring/1.webp";
+                });
+                title1.addEventListener("mouseout", function() {
+                    imgTag1.src = "/resources/images//Pictures/000007.JPG";
+                });
+            };
+            
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelector("#shopping_bag_icon").addEventListener("click", () => {
+                    document.querySelector("#shopping_bag").style.display = "block";
+                })
+                document.querySelector("#shopping_bag_exit_icon").addEventListener("click", () => {
+                    document.querySelector("#shopping_bag").style.display = "none";
+                })
+            });
+        </script>
+    </body>
+</html>

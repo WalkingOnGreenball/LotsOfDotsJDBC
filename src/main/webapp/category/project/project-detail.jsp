@@ -1,0 +1,585 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/resources/css/reset.css">
+        <link rel="stylesheet" href="/resources/css/sub.css">
+        <link rel="stylesheet" href="/resources/css/header.css">
+        <link rel="stylesheet" href="/resources/css/footer.css">
+        <link rel="stylesheet" href="/resources/css/project/project-detail.css">
+        <title>lots of dots</title>
+    </head>
+    <body>
+        <div class="container">
+            <jsp:include page="/WEB-INF/views/include/clickUp.jsp"></jsp:include>
+
+            <!-- header -->
+            <header>
+                <jsp:include page="/WEB-INF/views/include/header_logo.jsp"></jsp:include>
+                <nav class="header_nav">
+                    <ul>
+                        <li>
+                            <a href="/category/about/about.jsp"><img src="/resources/images/Icons/circle_icon.png" alt="About" class="icons"></a>
+                        </li>
+                        <li>
+                            <a href="/category/project/project.jsp"><img src="/resources/images/Icons/loader_loading_icon.png" alt="Project" class="icons"></a>
+                        </li>
+                        <li id="dotsLogo">
+                            <a href="/category/dots/dots.jsp"><img src="/resources/images/Icons/circle_icon.png" alt="Dots" class="icons"></a>
+                        </li>
+                        <li>
+                            <a href="/category/archive/archive.jsp"><img src="/resources/images/Icons/circle_icon.png" alt="Archive" class="icons"></a>
+                        </li>
+                        <li id="blogLogo">
+                            <a href="/category/blog/blog.jsp"><img src="/resources/images/Icons/circle_icon.png" alt="Blog" class="icons"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <jsp:include page="/WEB-INF/views/include/header_rightNav.jsp"></jsp:include>
+            </header>
+
+            <!-- main -->
+            <main class="projectSub_Main">
+                <section class="cartNav">
+                    <div class="cartNavProjectName">
+                            또 다른 봄
+                    </div>
+                    <div class="cartNavInfo">
+                        Project1 <br>
+                        양지연 <br>
+                        <br>
+                        2023 <br>
+                        128*182mm <br>
+                        185pages <br>
+                        SoftCover <br>
+                    </div>
+                    <form action="" method="" class="cartNavForm">
+                        <select name="cartNavOpt" id="cartNavOpt" class="cartNavOpt" onchange="priceValue(this.value);">
+                            <option value="essay"> 에세이 <또 다른 봄> + 인터뷰집</option>
+                            <option value="note"> 기록 노트</option>
+                            <option value="keyring"> 키링</option>
+                        </select>
+                        <div class="cartNavPrice" id="cartNavPrice">₩ 18,000</div>
+                        <input type="submit" value="Add to Cart" class="cartNavBtn">
+                    </form>
+                </section>
+
+                <section class="project_title">
+                    <h2>Project1</h2>
+                    <br>
+                    <h1>또 다른 봄</h1>
+                    <br>
+                    <br>
+                    <br>
+                    첫 임시보호, 지나온 고민들을 솔직하게 담은 <br>
+                    임시보호 에세이 <또 다른 봄>
+                </section>
+
+                <section class="project_write">
+                    <h1>| 프로젝트 소개</h1>
+                    <img src="/resources/images/Anothor spring/1.webp" alt="">
+                    <p>
+                        <span class="project_bold">'왜 임시보호 생각을 못했을까?'</span>
+                        <br>
+                        <br>
+                        강아지 입양을 고민하며, 전국 보호소에 있는 아이들을 살펴볼 수 있는 플랫폼 '포인핸드'를 한동안 들여다보던 시기가 있었습니다.
+                        하지만, 단어가 주는 힘이 크듯 쉽게 마음의 결정을 내리지 못했지요.
+                        그러다가 작년 3월쯤 '임시보호'라는 것에 대해 처음 알게 되었고, 마침 개인적으로 시간적 여유가 있던 시기였기 때문에 거주지역과 가까운 보호소들을 살펴보기 시작했습니다.
+                        그리고 그 과정에서 충남 아산시에서 활동하는 단체 '동물보호연대'를 알게 되었습니다.
+                        <br>
+                        <br>
+                        <br>
+                        <또 다른 봄>은 온기 없는 보호소 철장 밖으로 나와 따뜻한 한 번의 봄을 같이 보내기로 약속하며 <span class="project_underline">‘임시보호’를 통해</span> 강아지 봄이를 데려온 후, 매일 적은 일기들을 모아 만든 에세이입니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/2.webp" alt="">
+                    <pre class="project_center">
+
+"같이 있는 동안 많이 걷고, 넓은 곳에 가서 마음껏 뛰어 놀자.
+
+너의 밝고 건강한 모습을 보고 평생 가족이 나타날 때까지 같이 기다려줄게 ." 
+                    </pre>
+                    <br>
+                    <p>
+                        <span class="project_bold">'임시보호가 과연 아이들을 위한 일이 맞을까?'</span>
+                        <br>
+                        <br>
+                        물론 임시보호에도 책임감이 따르기에 아이에게 두 번의 상처를 주는 것은 아닐지, 임시보호자로서의 역할은 어디까지일지 고민이 많았습니다. 하지만, '내가 지금 이렇게 임시보호를 고민만 하고 만다면, 나로 인해 보호소가 아닌 세상 밖을 볼 수 있던 한 아이의 기회를 빼앗는 게 아닐까?' 하는 생각이 들어 임시보호도 입양 만큼이나 가치 있는 일이라는 판단이 들었습니다.
+                        <br>
+                        <br>
+                    </p>
+                    <img src="/resources/images/Anothor spring/3.webp" alt="">
+                    <p>
+                        <br>
+                        <span class="project_bold">임시보호를 하고 가장 크게 체감한 사실</span>은
+                        <br>
+                        <br>
+                        보호소에서 수많은 아이들 중 한 마리로 있는 것과 <span class="project_underline">가정에서 온전한 사랑을 받는 반려견으로 있는 것은 무척 다르다</span>는 것입니다. 집에 머무르는 시간이 비록 일주일이든, 한 달이든, 세 달이든지 말이죠.
+                        <br>
+                        <br>
+                        <br>
+                        손길이 하나 하나 닿기도 힘들 만큼 많은 아이들이 모여 있는 보호소에서는 한 마리가 지닌 고유한 매력과 개성을 알아봐주기가 어렵거든요.
+                    </p>
+                    <img src="/resources/images/Anothor spring/4.webp" alt="">
+                    <p>
+                        그리고 정말 많은 아이들이 임시보호 가정에서 행복하게 지내는 모습을 보여줌으로써 평생 함께할 입양 가족을 찾고 있습니다. 봄이만 해도, 임시보호를 시작한지 얼마 되지 않아 <span class="project_bold">SNS 계정으로 입양 문의가 오기도 하더라고요.</span>
+                        <br>
+                        <br>
+                        이로 인해, <span class="project_underline">임시보호가 한 아이의 입양길을 열어주는 좋은 수단이라는 것</span> 또한 배울 수 있었습니다.
+                        <br>
+                        <br>
+                        '보호소에서는 발휘되지 않던 아이의 매력이 집에서 사랑 받으면 충분히 뿜어져 나온다는 것, 그 모습이 아이의 미래 입양 가족에게 닿을 때까지 널리 알려주는 임시보호자의 역할로 인해 아이의 입양 확률이 높아진다는 것', 임시보호를 직접 경험했기에 알게된 사실입니다. 지금도 보호소에 있는 수많은 아이들이 얼른 <span class="project_bold">또 다른 봄</span>이가 되어 가족을 만날 수 있기를 바랍니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/5.webp" alt="">
+                    <p>
+                        또한 작년 4월, 임시보호로 봄이를 데려오며 '한 번의 봄이라도 마음껏 만끽할 수 있게 해주겠다'고 약속했었는데요.
+                        <br>
+                        <br>
+                        입양을 결심하며 봄이와 <span class="project_bold">매번 또 다른 봄을</span> 맞이할 수 있게 되었습니다.
+                    </p>
+                    <br>
+                    <br>
+                    <h1 class="project_center"><표지 시안></h1>
+                    <br>
+                    <br>
+                    <img src="/resources/images/Anothor spring/6.webp" alt="">
+                    <p>
+                        <span class="project_bold">에세이 <또 다른 봄></span>은 임시보호를 고민하던 시기부터 임시보호를 거쳐 입양하기까지 1년 동안 있었던 에피소드와 생각의 변화들을 솔직하게 담아낸 에세이입니다.
+                        <br>
+                        <br>
+                        난생 처음 강아지와 함께 살게 되며 마주한 초보 보호자의 면모, 그럼에도 서툰 보호자를 믿어준 강아지가 식구가 되어 가는 과정이 <span class="project_underline">임시보호를 고민하는 분들에게는 용기를</span>, 이미 반려견과 가족이 되어 함께 살고 계신 분들에게는 처음 한없이 <span class="project_bold">서툴던 모습에 대한 공감</span>을 불러 일으키면 좋겠습니다.
+                    <br>
+                    <br>
+                    <br>
+                    </p>
+                    <h1><목차 및 내지 구성></h1>
+                    <p>
+                        에세이 <또 다른 봄>은 크게 네 개의 파트로 나누어, 임시보호라는 것을 처음 알고 결심하기까지의 생각 변화들을 적었습니다.
+                    </p>
+                    <pre>
+    <span class="project_bold">Contents (목차)</span>
+
+    Prologue
+
+    <span class="project_bold">Part. 1 임보 전</span>
+
+    개를 키우고 싶던 적은 없었다
+    임시보호가 과연 아이를 위한 일일까? (D-13) 
+    내가 하고 있는 건 쇼핑이 아닌데
+    임보 확정 (D-11) 
+    데려오던 날 (D-0) 
+    이런 곳에서 한 달이나 있었구나 
+    집에 온 봄이 
+    강아지와 같이 살기 위해서는 얼마나 많은 돈이 필요할까? 
+
+    <span class="project_bold">Part. 2 임보 중</span>
+
+    모든 게 낯선 봄 
+    데려오기 전, 넌 무슨 삶을 산 걸까? (1)
+    데려오기 전, 넌 무슨 삶을 산 걸까? (2) 
+    벌써 배변훈련 성공? (D+3) 
+    그건 아마 봄이의 분리불안은 아닐 거야 (D+7) 
+    좋은 보호자는 못 되더라도 
+    자기 몸에는 둔하면서 강아지 건강에는 예민한 보호자 
+    갈길이 먼 우당탕탕 초보 보호자 
+    반기지 못하는 입양문의 
+    다시 한 번 보호소에 데려가야 했던 날 (D+14) 
+    화장실이 집 밖에 있는 강아지, 실외배변견
+    근데 봄아, 화장실이 너무 멀다 
+    결정이 필요한 때 (D+16) 
+    우리가 최선일까? 
+    “저희가 봄이의 평생 가족이 되겠습니다” (D+22) 
+    입양 신청서 작성 (D+22) 
+    임보 가족에서 입양 가족으로 (D+43) 
+    행복 모먼트
+    12번의 임시보호, 평생 가족을 찾은 16마리의 아이들 - 성빈님 인터뷰
+    뉴욕 강아지가 된 자매견 '페퍼' - 페퍼 보호자님 인터뷰
+
+    <span class="project_bold">Part. 3 입양 후</span>
+
+    분리불안 훈련 (1) (D+46)
+    분리불안 훈련 (2) 
+    내 집에서 과자 먹는 게 괜히 눈치 보인다니까 
+    첫 병원 방문(D+46) 
+    일주일이나 볼 수 없다니 (1) 
+    일주일이나 볼 수 없다니 (2)
+    6개월 강아지의 견생 최대 고비 
+    봄, 컴백홈 
+    기분이 좋아진 해바라기 
+    이곳 저곳 많이 다니기 위한 켄넬 훈련 
+    자동차에서 켄넬 훈련 시작 (D+66) 
+    진정한 사회화가 뭘까?
+    개춘기, 울고 웃는 산책길
+    내향형 강아지
+    나의 강아지에 대해 아는 것
+    동네에서 만난 친구(1) - 병만이 
+    동네에서 만난 친구(2) - 까망이 
+    동네에서 만난 친구(3) - 곰이
+    앵그리 반려인은 아닙니다만
+    에필로그 (D-365)
+
+    <span class="project_bold">Part.4  임시보호 중인 아이들</span>
+                    </pre>
+                    <br>
+                    <img src="/resources/images/Anothor spring/7.webp" alt="">
+                    <p>
+                        <br>
+                        Part. 1에서는 임시보호 전에 갖고 있던 고민들과 봄이가 처음 온 날부터 모르는 것 투성이였던 초보 보호자와 어린 강아지의 위태로운 이야기들을 담았습니다.
+                        <br>
+                        <br>
+                    </p>
+                    <img src="/resources/images/Anothor spring/8.webp" alt="">
+                    <p>
+                        <br>
+                        집에 적응한 강아지는 어찌나 사랑스럽던지.. 
+                        <br>
+                        <br>
+                        보호소의 철장 안이 아닌, 폭신한 방석에서 잘도 자는 아이를 보면서 정드는 마음을 많이 추스르며 꼭 좋은 평생 가족을 만나게 해주겠다고 마음을 다잡았습니다. 
+                        <br>
+                        <br>
+                        '우리집에 잘 적응한 강아지가 새로운 환경에서 적응해야 하는 일을 만들어 주고 싶지 않다'는 생각과 임시보호 후 입양 가정으로 옮겨간 수많은 아이들이 거짓말처럼 잘 적응하는 모습들을 보며 그 사이에서 고민이 많이 들었습니다. 어쩌면 봄이는 또 다시 적응을 잘해주겠지만 저희 가족이 봄이에게 흠뻑 정이 들어 입양을 결심하게 되었다는 말이 더 맞을 것 같습니다.
+                        <br>
+                        <br>
+                        Part. 2 에서는 입양 의사에 대한 확신을 갖기까지 또 다시 고민한 것들과 날이 갈수록 사랑스러워지는 봄이와의 행복한 순간들에 대해 적었습니다.
+                        <br>
+                        <br>
+                    </p>
+                    <img src="/resources/images/Anothor spring/9.webp" alt="">
+                    <p>
+                        푹신한 방석 위에서, 따뜻한 난로 앞에서 배를 까고 편하게 자는 봄이를 보며 지금도 좁은 보호소 철장 안에서 웅크리고 자는 아이들을 떠올립니다. 편안해보이는 우리집 강아지를 보며 흐뭇한 기분이 들지만, 동시에 왠지 모를 미안한 마음이 올라옵니다.
+                        <br>
+                        <br>
+                        Part. 3 에서는 고민 끝에 임시보호하던 봄이를 입양하기로 결정하고 앞으로 함께 살기 위해 노력 중인 것들, 봄이가 저의 시야를 넓혀주었기에 보이는 세상에 대해 이야기합니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/10.webp" alt="">
+                    <p>
+                        임시보호가 아이에게 또 다른 상처만 주는 일은 아닌지 걱정하며 확신을 갖기까지 신중하게 고민하던 때, SNS에서 임시보호 중인 강아지들의 모습을 많이 찾아보곤 했습니다. 
+                        <br>
+                        <br>
+                        아이들마다 새로운 집에 적응하기까지 걸리는 시간은 전부 달랐지만, 한 가지 공통점이 있었습니다. <span class="project_bold">'임시보호처에서 보호소에 있을 때와는 전혀 다른 표정을 짓고 있다는 것'</span>입니다. 눈에 띄게 밝아진 아이들의 표정을 보며 임시보호를 해야겠다는  확고한 마음을 가질 수 있었습니다.
+                    </p>
+                    <br>
+                    <pre class="project_center">
+'비좁은 공간, 열악한 환경에서의 자연사, 안락사 등으로부터 벗어나게 해주는 임시보호가 한 아이를 살릴 수 있는 일이겠구나.
+살리고 보자. 가족을 찾을 수 있는 확률을 높여주자.'
+                    </pre>
+                    <br>
+                    <img src="/resources/images/Anothor spring/11.webp" alt="">
+                    <p>
+                        에세이 Part.4에는 위 예시 이미지와 <span class="project_underline">같이 현재 임시보호처에서 지내고 있는 아이의 임시보호 전과 후 사진</span> 그리고 <span class="project_underline">이름 / 성별 / 나이 / 출신보호소 / 임시보호 시작일 / 좋아하는 것 / 임시보호를 알리는 한 마디</span>가 실릴 예정입니다.
+                        <br>
+                        <br>
+                        아이를 처음 만났을 때의 모습 그리고 지금 임시보호처에서 행복한 반려견의 모습을 보여줌으로써, 아직 임시보호를 고민하고 계신 분들에게 어째서 임시보호가 한 아이를 살릴 수 있는 일인지, 아이의 입양 확률을 높일 수 있는 길인지 잘 보여줄 수 있으리라 생각합니다.
+                        <br>
+                        <br>
+                        <br>
+                        *임시보호 중인 강아지의 행복한 모습으로 함께 임시보호의 중요성을 세상에 알려주실 분들께서는 책에 아이의 사진이 실릴 수 있도록 <span class="project_bold">‘Part.4 참여’ 항목을 선택</span>해주세요. Part.4의 내용은 <또 다른 봄>의 초판에만 실릴 예정입니다.
+                        <br>
+                        <br>
+                        **Part.4 참여 리워드는 임시보호 중인 아이들의 사진이 실릴 수 있도록 후원일 기준 <span class="project_bold">임시보호 중이신 분들만 선택</span>해주시기를 부탁드립니다.
+                        <br>
+                        <br>
+                        ***신청해주신 분들에게는 아이의 사진 파일과 정보를 요청드리기 위한 구글폼을 개별적으로 전달드리겠습니다.
+                        <br>
+                        <br>
+                        <pre class="project_center">
+<또 다른 봄> 판형
+무선제본
+128 x 182 mm
+185 pages
+Softcover
+                        </pre>
+                        <br>
+                        <br>
+                        <h1 class="project_center">작가의 기록 루틴에 대한 힌트, 인터뷰집</h1>
+                        <img src="/resources/images/Anothor spring/12.webp" alt="">
+                    </p>
+                    <p>
+                        <또 다른 봄>의 양지연 작가는 구조견 봄이를 임시보호하며 매일 적어둔 일기들을 모아 한 권의 에세이를 낼 수 있었습니다.
+                        <br>
+                        <br>
+                        <span class="project_underline">양지연 작가의 기록 루틴과 방법</span>을 엿볼 수 있는 <span class="project_bold">인터뷰집이 에세이와 함께 동봉됩니다.</span>
+                    </p>
+                    <img src="/resources/images/Anothor spring/13.webp" alt="">
+                    <p>
+                        작가가 가진 기록 루틴에 대해 던진 <span class="project_bold">5가지의 질문</span>에 대한 답변이
+                        <br>
+                        <br>
+                        기록을 꾸준히 하고 싶으신 분들에게, 기록을 시작하시려는 분들에게 좋은 힌트가 되기를 바랍니다.
+                    </p>
+                    <p>
+                    <인터뷰집> 판형
+                    <br>
+                    <br>
+                    <br>
+                    5단 접지 <br>
+                    92 x 148 mm <br>
+                    10 pages <br>
+                    <br>
+                    <br>
+                    </p>
+                    <p>
+                        "수백 개의 보호소, 수십만 마리의 강아지 중 우리는 어떻게 인연이 되었을까?"
+                    </p>
+                    <h2>소중한 시간을 기록하기 위한, 임시보호 기록 노트</h2>
+                    <img src="/resources/images/Anothor spring/14.webp" alt="">
+                    <p>
+                        양지연 작가는 처음 겪는 임시보호자의 역할과 반려견 보호자로서, 강아지 봄이를 통해 울고 웃고 뿌듯하고 행복하던 순간들을 매일 기록해두었습니다.
+                        <br>
+                        <br>
+                        지금 내가 임시보호하는 강아지와 함께하는 순간은 강아지에게도, 임시보호자에게도 소중하기에 다시 오지 않을 아이와의 시간을 기록할 수 있는 임시보호 기록 노트를 제작했습니다.
+                    </p>
+                    <p>
+                        "오직 '지금'만 기록해둘 수 있는 아이의 짧고 소중한 시간을 기록하세요."
+                    </p>
+                    <img src="/resources/images/Anothor spring/15.webp" alt="">
+                    <p>
+                        임시보호 기록노트는 봄, 여름, 가을, 겨울 4가지의 디자인으로 구성되며, 각각 3개월 분량의 기록이 가능합니다.
+                    </p>
+                    <h1>임시보호 기록 노트 활용법</h1>
+                    <p>
+                        활용법 1. 임시보호 기록 노트를 아이의 입양 가족에게 선물하세요.
+                    </p>
+                    <img src="/resources/images/Anothor spring/16.webp" alt="">
+                    <p>
+                        사진 출처 tvN 캐나다체크인
+                    </p>
+                    <p>
+                        ‘입양한 강아지가 우리집으로 오기 전, 임시보호 가정에서 어떤 모습으로 지냈는지,
+                        <br>
+                        <br>
+                        어디가 아프지는 않았는지,
+                        <br>
+                        무슨 놀이를 좋아했는지,
+                        <br>
+                        체중은 또 얼마나 늘었는지’
+                        <br>
+                        <br>
+                        <br>
+                        입양자는 가족의 품으로 오기 전, 아이의 모습이 궁금할 수밖에 없는데요. 
+                        <br>
+                        쑥쑥 자라는 아이의 짧고 소중한 순간을 입양 가족에게 들려주세요.
+                    </p>
+                    <img src="/resources/images/Anothor spring/17.webp" alt="">
+                    <p>
+                        임시보호 기록 노트의 맨뒷장은 입양가족에게 전하고 싶은 말을 담은 '편지'를 전할 수 있는 페이지로 구성했습니다.
+                        <br>
+                        임시보호 기간 동안 임시보호자로서 바라보신 아이의 모습과 추억들을 입양 가족에게 조금이나마 공유할 수 있기를 바랍니다.
+                    </p>
+                    <p>
+                        활용법 2. 임시보호 기록 노트로 아이와의 추억을 간직하세요.
+                    </p>
+                    <img src="/resources/images/Anothor spring/18.webp" alt="">
+                    <p>
+                        봄이로 인해 임시보호와 입양 문화에 관심 갖게 되면서 알게 된 사실 중 하나는 한 마리라도 더 많은 아이를 보호소에서 구조하기 위해, 꾸준히 임시보호 활동을 이어가시는 분들이 정말 많이 계시다는 것이었습니다.
+                        <br>
+                        <br>
+                        아이를 평생 사랑해줄 수 있는 가족의 품으로 보내는 건 무척이나 뜻깊고 기쁜 일이지만, 나의 품을 거쳐간 아이들이 보고 싶은 것은 당연하겠죠.
+                        <br>
+                        <br>
+                        임시보호 기록 노트에 모아둔 아이와의 시간을 가끔씩 꺼내보며, 소중했던 순간들을 떠올릴 수 있기를 바랍니다.
+                    </p>
+                    <h1>노트 디자인</h1>
+                    <img src="/resources/images/Anothor spring/19.webp" alt="">
+                    <p>
+                        임시보호 기록 노트의 표지에는 아이와 함께 보낼 계절의 색감을 가득 담아냈습니다. 
+                        <br>
+                        <br>
+                        또한 'Thank you for fostering me!' 라는 문구를 통해 아이가 임시보호자에게 가질 고마운 마음을 대신 전합니다.
+                    </p>
+                    <h1>노트 내지 구성</h1>
+                    <img src="/resources/images/Anothor spring/20.webp" alt="">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="/resources/images/Anothor spring/21.webp" alt="">
+                    <p>
+                        1 page, 공백 말풍선
+                        <br>
+                        <br>
+                        구조견의 사진을 붙이거나 그림을 그릴 수 있습니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/22.webp" alt="">
+                    <p>
+                        2~3 page, 목차
+                    </p>
+                    <img src="/resources/images/Anothor spring/23.webp" alt="">
+                    <br>
+                    <br>
+                    <img src="/resources/images/Anothor spring/24.webp" alt="">
+                    <p>
+                        4~7 page, 프로필 작성
+                        <br>
+                        <br>
+                        구조견의 기본 정보부터 임시보호처에서 확인한 특징, 건강 상태 등을 적을 수 있습니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/25.webp" alt="">
+                    <p>
+                        8~9 page, 연간 캘린더
+                        <br>
+                        <br>
+                        아이가 임시보호처에 머무른 기간을 체크할 수 있습니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/26.webp" alt="">
+                    <p>
+                        10~11 page, 월별 캘린더
+                        <br>
+                        <br>
+                        임시보호 기록노트 한 권이 제공하는 3개월 분량에 여분의 1개월치를 더한
+                        <br>
+                        <br>
+                        4개월 분량의 캘린더를 통해, 월별 계획을 세울 수 있습니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/27.webp" alt="">
+                    <p>
+                        12~13 page, 병원 방문 & 백신 접종 & 약 복용 기록
+                    </p>
+                    <img src="/resources/images/Anothor spring/28.webp" alt="">
+                    <p>
+                        14~15 page, 목욕&미용 주기 & 무게 변화 기록
+                    </p>
+                    <img src="/resources/images/Anothor spring/29.webp" alt="">
+                    <p>
+                        16~17 page, 구매 제품 리뷰 & 위시리스트 기록
+                    </p>
+                    <img src="/resources/images/Anothor spring/30.webp" alt="">
+                    <p>
+                        20~65 page, 데일리 루틴
+                        <br>
+                        <br>
+                        수면 시간부터 산책 횟수, 배변 횟수, 사료 및 간식 급여량 
+                        <br>
+                        <br>
+                        그리고 짤막한 일기와 오늘 반려견에게 하고 싶은 한 마디를 적을 수 있는 페이지입니다.
+                        <br>
+                        <br>
+                        3개월 분량으로 노트 한 권 당 총 92일의 기록을 남겨둘 수 있습니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/31.webp" alt="">
+                    <p>
+                        66~67 page, 프리 노트_라인
+                    </p>
+                    <img src="/resources/images/Anothor spring/32.webp" alt="">
+                    <p>
+                        68~69 page, 프리 노트_점
+                    </p>
+                    <img src="/resources/images/Anothor spring/33.webp" alt="">
+                    <p>
+                        70~71 page, To.adopt family
+                        <br>
+                        <br>
+                        미래 아이의 입양 가족에게 편지를 쓸 수 있는 페이지입니다.
+                        <br>
+                        <br>
+                        임시보호자로서 바라본 아이의 소중한 시간들을 평생 가족에게 전해주세요.
+                        <p>
+                            <br>
+                            <임시보호 기록노트> 판형
+                            <br>
+                            <br>
+                            스티치제본 <br>
+                            128 x 182 mm <br>
+                            72 pages <br>
+                            Softcover <br>
+                        </p>
+                    </p>
+                    <h1>About / Fostering / Don't shop 키링</h1>
+                    <img src="/resources/images/Anothor spring/34.webp" alt="">
+                    <p>
+                        입양 가족과 임시보호 가족을 위해,
+                        <br>
+                        <br>
+                        Adopted / Fostering / Don't shop 세 가지의 다른 문구가 새겨진 키링을 제작했습니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/35.webp" alt="">
+                    <p>
+                        유기동물의 개체수가 줄어들고, 임시보호와 입양에 관심이 높아지는 그리고 무엇보다 동물을 사고 파는 행위가 금지되는 건강한 반려문화가 어서 빨리 우리나라에도 자리잡기를 바라는 마음으로 제작한 키링입니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/36.webp" alt="">
+                    <p>
+                        "사지 마세요. 입양했습니다. 임시보호 중입니다."
+                        <br>
+                        <br>
+                        봄이를 임시보호했던 보호자로서 그리고 입양한 보호자로서 1년을 지내오며 참 많이 하고 싶던 말들을 귀여운 디자인과 눈에 띄는 컬러가 돋보이는 키링으로 제작했습니다.
+                        <br>
+                        <br>
+                        특히나 발자국 모양의 Don't shop 키링은 강아지들과 함께 동물을 사고 팔 수 없게 되는 그날까지 함께 걸어가자는 의미를 담았습니다.
+                    </p>
+                    <img src="/resources/images/Anothor spring/37.webp" alt="">
+                    <p>
+                        키링 사이즈
+                        <br>
+                        <br>
+                        Adopted   50 x 30 mm   투명 아크릴
+                        <br>
+                        <br>
+                        Fostering   50 x 30 mm   투명 아크릴
+                        <br>
+                        <br>
+                        Don't shop   40 x 40 mm   불투명 아크릴
+                    </p>
+                    <hr>
+                    <br>
+                    <h1>| 작가 소개</h1>
+                    <br>
+                    <img src="/resources/images/Anothor spring/38.webp" alt="">
+                    <p>
+                        작가 양지연
+                        <br>
+                        <br>
+                        주인공 강아지 '봄'의 언니, 2022년 4월에 봄이를 임시보호하기 시작하면서부터 스스로 놀랄 정도의 빠른 속도로 반려인의 삶으로 물드는 중이다.
+                        <br>
+                        <br>
+                        2019년, 휴학 에세이 <우리는 하고싶은 걸 할 수 있을 때 해야 합니다>를 독립출판하였고,
+                        <또 다른 봄>이 책으로 전하는 두 번째 이야기다.
+                        <br>
+                        <br>
+                        인스타그램 @yang_jiyeon__
+                    </p>
+                    <p>
+                        에피소드 메이커 봄
+                        <br>
+                        <br>
+                        이 책의 주인공 봄, 양쪽 앞발에 길이가 다른 땡땡이 양말이 특징이다. <br>
+                        겁이 많지만 그만큼 호기심도 많은 게 언니를 딱 닮았고, 공놀이를 가장 좋아한다. <br>
+                        최대한 넓은 세상을 보여주고 싶은 언니와 함께 많은 곳을 걷고 여행하며 재미난 견생을 보내는 중이다. <br>
+                        <br>
+                        <br>
+                        인스타그램 @what_a_bom_day
+                    </p>
+                </section>
+            </main>
+
+            <!-- footer -->
+            <jsp:include page="/WEB-INF/views/include/footer.jsp"></jsp:include>
+        </div>
+        <script>
+            function priceValue(value) {
+                let optionArrs = document.querySelector("#cartNavOpt")
+                let priceTag = document.querySelector("#cartNavPrice")
+                if (value == "essay") {
+                    priceTag.innerText = "₩ 18,000";
+                    console.log("1");
+                } else if (value == "note") {
+                    priceTag.innerText = "₩ 8,000";
+                    console.log("2");
+                } else if (value == "keyring") {
+                    priceTag.innerText = "₩ 7,000";
+                    console.log("3");
+                }
+            };
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelector("#shopping_bag_icon").addEventListener("click", () => {
+                    document.querySelector("#shopping_bag").style.display = "block";
+                })
+                document.querySelector("#shopping_bag_exit_icon").addEventListener("click", () => {
+                    document.querySelector("#shopping_bag").style.display = "none";
+                })
+            });
+        </script>
+    </body>
+</html>

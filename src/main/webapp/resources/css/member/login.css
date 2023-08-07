@@ -1,0 +1,61 @@
+/* main */
+.login_Main {
+   width: 1125px;
+   height: 1000px;
+   margin: 0 auto;
+}
+.login_Title {
+   width: 100%;
+   height: 40%;
+   text-align: center;
+   padding-top: 300px;
+   font-size: 170%;
+   /* border: 1px solid black; */
+}
+.login_Form {
+   width: 100%;
+   height: 20%;
+   /* border: 1px solid black; */
+}
+   .login_idPw {
+      width: 59%;
+      height: 100%;
+      float: left;
+      text-align: end;
+      /* border: 1px solid black; */
+   }
+      input[type="text"] {
+         margin-top: 50px;
+      }
+      .login_Blank {
+         width: 250px;
+         height: 35px;
+         margin: 5px;
+         border: 1px solid #7e746a;
+         border: 1px solid #7e746a;
+         border-radius: 5px;
+      }
+   .login_btn {
+      width: 41%;
+      height: 100%;
+      float: left;
+      /* border: 1px solid black; */
+   }
+      [type=submit] {
+         width: 70px;
+         height: 80px;
+         margin: 50px 5px;
+         color: #fcfcf4;
+         background-color: #7e746a;
+         border: 1px solid #7e746a;
+         border-radius: 5px;
+      }
+.login_Link {
+   width: 100%;
+   height: 40%;
+   text-align: center;
+   /* border: 1px solid black; */
+}
+   .login_Link a {
+      font-size: 90%;
+   }

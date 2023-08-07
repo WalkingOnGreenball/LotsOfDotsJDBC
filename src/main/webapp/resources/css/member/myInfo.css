@@ -1,0 +1,84 @@
+/* main */
+.project_Main {
+   width: 1125px;
+   height: 1000px;
+   margin: 0 auto;
+}
+.Login_Title {
+   width: 100%;
+   height: 33%;
+   text-align: center;
+   padding-top: 200px;
+   font-size: 170%;
+}
+.Login_Form {
+   width: 100%;
+   height: 40%;
+   font-size: small;
+   /* border: 1px solid black; */
+}
+   .login_idPw {
+      width: 61.5%;
+      height: 100%;
+      display: inline-block;
+      text-align: end;
+   }
+      .Login_Blank {
+         width: 250px;
+         height: 35px;
+         margin: 5px;
+         padding-left: 7px;
+         border: 1px solid #7e746a;
+         border-radius: 5px;
+      }
+      .sign_radioBox {
+         margin: 5px;
+         padding-right: 221px;
+      }
+         label {
+            margin-right: 15px;
+            margin-left: 3px;
+         }
+         label:last-of-type {
+            margin-right: 40px;
+         }
+         .sign_radio {
+            margin-left: 15px;
+            scale:90%;
+         }
+         .sign_radio:first-of-type {
+            margin-left: 34px;
+         }
+   .sign_blank {
+      width: 38.5%;
+      height: 100%;
+      display: inline-block;
+      /* border: 1px solid black; */
+   }
+   .login_btn {
+      width: 100%;
+      height: 25%;
+      display: inline-block;
+      text-align: center;
+      /* border: 1px solid black; */
+   }
+      [type=submit] {
+         width: 185px;
+         height: 35px;
+         margin: 30px auto;
+         border: 1px solid #7e746a;
+         background-color: #7e746a;
+         border-radius: 5px;
+         color: #fcfcf4;
+      }
+      .delete_btn {
+         width: 185px;
+         height: 35px;
+         margin: 20px auto;
+         padding: 9px;
+         border: 1px solid #7e746a;
+         background-color: #7e746a;
+         border-radius: 5px;
+         color: #fcfcf4;
+         text-align: center;
+      }

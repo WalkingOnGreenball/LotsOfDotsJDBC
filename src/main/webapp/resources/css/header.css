@@ -1,0 +1,113 @@
+/* header */
+header {
+   width: 100%;
+   height: 60px;
+   border-bottom: 1px solid black;
+}
+   .header_logo {
+      width: 30%;
+      height: 100%;
+      float: left;
+   }
+      .header_leftLogo {
+         height: 100%;
+         padding: 15px;
+      }
+   .header_nav {
+      width: 40%;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+      .header_nav ul {
+         list-style-type: none;
+         display: flex;
+         flex-direction: row;
+      }
+         .header_nav li {
+            text-align: center;
+            padding: 14px;
+         }
+            #dotsLogo {
+               padding: 6px 14px;
+            }
+            #blogLogo {
+               padding: 10px 14px;
+            }
+   .header_rightNav {
+      width: 30%;
+      height: 100%;
+      float: right;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+   }
+      .header_rightNav li {
+         list-style-type: none;
+         float: left;
+         text-align: center;
+      }
+.shopping_bag {
+   width: 350px;
+   height: 200px;
+   border: 4px dotted #7e746a;
+   border-radius: 15px;
+   position: absolute;
+   right: 1%;
+   top: 75px;
+   z-index: 30;
+   background-color: #fcfcf4;
+   display: none;
+}
+   .shopping_bag_top{
+      width: 100%;
+      height: 15%;
+      border-bottom: 1px solid black;
+   }
+      .shopping_bag_title {
+         width: 90%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         float: left;
+         /* border: 1px solid black; */
+      }
+      .shopping_bag_exit {
+         width: 10%;
+         height: 100%;
+         float: left;
+         /* border: 1px solid black; */
+      }
+         .shopping_bag_exit img {
+            padding: 5px;
+            height: 100%;
+         }
+   .shopping_bag_bot{
+      width: 100%;
+      height: 85%;
+      /* border: 1px solid black; */
+   }
+      .shopping_bag_photo {
+         width: 60%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         float: left;
+         /* border: 1px solid black; */
+      }
+         .shopping_bag_photo img {
+            width: 100%;
+         }
+      .shopping_bag_info {
+         width: 40%;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         text-align: left;
+         float: left;
+         /* border: 1px solid black; */
+      }

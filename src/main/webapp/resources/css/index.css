@@ -1,0 +1,90 @@
+/* main */
+.index_gatePic {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+    .index_gatePic .gatePic {
+        width: 100%;
+    }
+    .index_gatePic .gateLogo {
+        width: 7%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 100px;
+    }
+
+.index_updateNavArea {
+    width: 100%;
+    height: 100%;
+}
+    .index_updateNav {
+        width: 750px;
+        height: 150px;
+        margin: 0 auto;
+    }
+        .index_updateNavRow {
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+            border-bottom: 1px dotted black;
+            float: left;
+        }
+            .index_updateImg {
+                width: 40%;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                /* border: 1px solid black; */
+                float: left;
+            }
+                .index_updateImg img {
+                    width: 150px;
+                    padding: 25px;
+                }
+            .index_updateWrite {
+                width: 60%;
+                height: 100%;
+                margin: 0 auto;
+                /* border: 1px solid black; */
+                float: left;
+                padding: 10px;
+            }
+                .update_Accent {
+                    background-color: #c7e3ff;
+                    border-radius: 10px;
+                }
+
+.index_categoryNav {
+    width: 100%;
+    height: 100%;
+}
+    .index_categoryBox {
+        width: 750px;
+        height: 505px;
+        margin: 50px auto;
+        /* border: 1px solid black; */
+        font-size: 150%;
+        font-weight: bolder;
+        position: relative;
+    }
+        .categoryBox_img {
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+        .categoryBox_aTag {
+            width: 100%;
+            position: absolute;
+            left: 50px;
+            top: 230px;
+            z-index: 100;
+            color: #fcfcf4;
+        }
